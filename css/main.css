@@ -1370,8 +1370,6 @@ img {
 
 .product {
   margin-bottom: 140px;
-  margin-left: -35px;
-  margin-right: -35px;
 }
 
 .product-top {
@@ -1822,6 +1820,8 @@ img {
   margin-bottom: 70px;
   overflow: hidden;
   padding-bottom: 30px;
+  margin-left: -35px;
+  margin-right: -35px;
 }
 
 .carousel__wrapper::before {
