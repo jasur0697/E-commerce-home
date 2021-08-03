@@ -2,7 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
+}
 
+.page-view__heading {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
 }
 
 .page-view__list {
@@ -11,12 +17,9 @@
     font-family: $secondary-font;
 }
 
-
-
 .page-view__item:not(:last-child) {
     margin-right: 25px;
-    
-}
+   }
 
 .page-view__btn {
     color: $grey-cl;
@@ -31,7 +34,6 @@
 .view-icons {
     padding-left: 20px;
 }
-
 
 .product-counter {
     font-weight: 600;
