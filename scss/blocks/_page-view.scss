@@ -1,0 +1,22 @@
+.page-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.page-view__list {
+    @include list-unstyled;
+    display: flex;
+}
+.page-view__item {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $grey-cl;
+}
+
+.page-view__link {
+    text-decoration: none;
+    color: $grey-cl;
+}
