@@ -978,18 +978,49 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Open Sans", sans-serif;
 }
 
-.page-view__item {
+.page-view__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.page-view__btn {
+  color: #A9A9A9;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: #A9A9A9;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.page-view__link {
-  text-decoration: none;
-  color: #A9A9A9;
+.view-icons {
+  padding-left: 20px;
+}
+
+.product-counter {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  width: 32px;
+  height: 18px;
+  border-radius: 12px;
+}
+
+.grid-view {
+  color: #000;
+  background-image: url(/img/grid-view.svg);
+  background-repeat: no-repeat;
+  background-size: 13.5px;
+}
+
+.list-view {
+  background-image: url(/img/list_view.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 /* CATEGORY MENU */
