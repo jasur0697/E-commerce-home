@@ -1370,6 +1370,8 @@ img {
 
 .product {
   margin-bottom: 140px;
+  margin-left: -35px;
+  margin-right: -35px;
 }
 
 .product-top {
