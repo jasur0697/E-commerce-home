@@ -4,11 +4,10 @@
 }
 
 .links__list {
-  width: 1139px;
+  @include list-unstyled;
   padding: 16px 0px;
-  margin: 0;
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
 }
 
@@ -58,11 +57,11 @@
 
 .dropdown-link {
   text-decoration: none;
-  color: $black-cl;
+  color: $main-color;
   white-space: nowrap;
 
   &:hover {
-    background-color: $lightGrey-cl;
+    background-color: $dark-cl;
   }
 }
 

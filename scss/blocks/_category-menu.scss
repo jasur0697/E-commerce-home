@@ -116,3 +116,29 @@
   }
 }
 
+@include breakpoint-down (980px) {
+  .category-menu__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .category-menu__item {
+    margin-bottom: 40px;
+  }
+
+  .green {
+    width: 700px;
+  }
+}
+
+@include breakpoint-down (850px) {
+  .green {
+    width: 450px;
+  }
+}
+
+@include breakpoint-down (520px) {
+  .green {
+    width: 330px;
+  }
+}
