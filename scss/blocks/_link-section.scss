@@ -1,8 +1,13 @@
 /* LINKS SECTION */
-.links-section{
+.links-section {
   background-color: $lightGrey-cl;
 }
 
+@media only screen and (max-width: 450px) {
+  .links-section{
+    display: none
+  }
+}
 .links__list {
   @include list-unstyled;
   padding: 16px 0px;

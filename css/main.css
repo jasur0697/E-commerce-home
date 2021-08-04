@@ -852,6 +852,12 @@ img {
   background-color: #F5F5F5;
 }
 
+@media only screen and (max-width: 450px) {
+  .links-section {
+    display: none;
+  }
+}
+
 .links__list {
   padding: 0;
   margin: 0;
