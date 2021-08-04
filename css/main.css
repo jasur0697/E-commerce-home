@@ -916,13 +916,14 @@ img {
 }
 
 .dropdown-link {
+  display: block;
   text-decoration: none;
   color: #151515;
   white-space: nowrap;
 }
 
 .dropdown-link:hover {
-  background-color: #575757;
+  background-color: #92c75d;
 }
 
 .links__item:hover .dropdown {

@@ -56,17 +56,19 @@
   display: none;
 }
 
+
 .dropdown-item:not(:last-child) {
   margin-bottom: 5px;
 }
 
 .dropdown-link {
+  display: block;
   text-decoration: none;
   color: $main-color;
   white-space: nowrap;
 
   &:hover {
-    background-color: $dark-cl;
+    background-color: #92c75d;
   }
 }
 
