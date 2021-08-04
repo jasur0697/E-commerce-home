@@ -67,11 +67,14 @@
 }
 
 .green {
-  width: 430px;
+  min-width: 430px;
   padding: 40px 182px 32px 32px;
   background-image: url("/img/Banner.png");
   border-radius: 12px;
 }
+
+@media only screen and (max-width: 925px) {
+.green
 
 .category-menu__text {
   font-family: $main-font;
