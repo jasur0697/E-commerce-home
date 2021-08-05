@@ -12,10 +12,62 @@
 }
 
 .category-menu__item {
-  width: 269px;
+  max-width:280px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 450px) {
+  .category-menu {
+    padding-top: 20px;
+  }
+  
+  .category-menu__item {
+    max-width: 320px;
+    
+  }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .category-menu__item {
+      margin-right: 20px;
+      
+    }
+    }
+.green-space:not(:last-child) {
+  margin-right: 32px;
+  
+}
+
+.green {
+  width: 100%;
+  max-width: 420px;
+  padding: 48px 182px 28px 32px;
+  background-image: url("/img/Banner.png");
+  border-radius: 12px;
+
+}
+
+@media only screen and (max-width: 1100px) {
+.green {
+  width: 100%;
+  max-width: 320px;
+  padding: 28px 182px 16px 22px;
+  background-image: url("/img/Banner.png");
+  border-radius: 12px;
+}
+}
+
+@media only screen and (max-width: 850px) {
+  .green {
+    width: 100%;
+    max-width: 850px;
+    padding: 28px 182px 16px 22px;
+    background-image: url("/img/Banner.png");
+    border-radius: 12px;
+  }
+  }
 
 .category-menu__title {
   margin: 0;
@@ -66,15 +118,6 @@
   background-size: contain;
 }
 
-.green {
-  min-width: 430px;
-  padding: 40px 182px 32px 32px;
-  background-image: url("/img/Banner.png");
-  border-radius: 12px;
-}
-
-@media only screen and (max-width: 925px) {
-.green
 
 .category-menu__text {
   font-family: $main-font;
@@ -119,9 +162,9 @@
   }
 }
 
-@include breakpoint-down (980px) {
+@include breakpoint-down (1050px) {
   .category-menu__list {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 
@@ -129,19 +172,19 @@
     margin-bottom: 40px;
   }
 
-  .green {
-    width: 700px;
-  }
+
 }
 
-@include breakpoint-down (850px) {
-  .green {
-    width: 450px;
+@include breakpoint-down (925px) {
+  .category-menu__list {
+    flex-direction: column;
+    justify-content: flex-start;
   }
+
+  .category-menu__item {
+    margin-bottom: 40px;
+  }
+
+
 }
 
-@include breakpoint-down (520px) {
-  .green {
-    width: 330px;
-  }
-}

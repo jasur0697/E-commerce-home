@@ -666,15 +666,18 @@ img {
   background-color: white;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 350px) {
   .site-header__middle {
     min-width: 100%;
-    padding: 40px 25px 45px;
+    padding: 40px 0 45px;
   }
-  .middle__logo-link {
-    min-width: 117px;
+  .middle__logo {
+    max-width: 147px;
     height: 18px;
     margin-right: 20px;
+  }
+  .middle__logo-link {
+    margin-right: 0;
   }
 }
 
@@ -760,9 +763,9 @@ img {
             order: 3;
     margin-top: 50px;
     width: 100%;
+    max-width: 100%;
     padding-right: 5px;
     padding-left: 5px;
-    min-width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -850,6 +853,8 @@ img {
 /* LINKS SECTION */
 .links-section {
   background-color: #F5F5F5;
+  margin: 0 -35px;
+  padding: 0 35px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -873,6 +878,7 @@ img {
 
 .links__link {
   position: relative;
+  z-index: 1;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -884,6 +890,7 @@ img {
 
 .links__item:not(:last-child) {
   margin-right: 60px;
+  margin-bottom: 10px;
 }
 
 .links__link::before {
@@ -901,6 +908,7 @@ img {
 
 .dropdown {
   position: absolute;
+  z-index: 99;
   width: 100px;
   padding: 0;
   margin: 0;
@@ -1057,7 +1065,7 @@ img {
 }
 
 .category-menu__item {
-  width: 269px;
+  max-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,6 +1073,55 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 450px) {
+  .category-menu {
+    padding-top: 20px;
+  }
+  .category-menu__item {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .category-menu__item {
+    margin-right: 20px;
+  }
+}
+
+.green-space:not(:last-child) {
+  margin-right: 32px;
+}
+
+.green {
+  width: 100%;
+  max-width: 420px;
+  padding: 48px 182px 28px 32px;
+  background-image: url("/img/Banner.png");
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .green {
+    width: 100%;
+    max-width: 320px;
+    padding: 28px 182px 16px 22px;
+    background-image: url("/img/Banner.png");
+    border-radius: 12px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .green {
+    width: 100%;
+    max-width: 850px;
+    padding: 28px 182px 16px 22px;
+    background-image: url("/img/Banner.png");
+    border-radius: 12px;
+  }
 }
 
 .category-menu__title {
@@ -1116,14 +1173,7 @@ img {
   background-size: contain;
 }
 
-.green {
-  width: 430px;
-  padding: 40px 182px 32px 32px;
-  background-image: url("/img/Banner.png");
-  border-radius: 12px;
-}
-
-.green .category-menu__text {
+.category-menu__text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1167,12 +1217,12 @@ img {
   background-size: contain;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1050px) {
   .category-menu__list {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1180,20 +1230,20 @@ img {
   .category-menu__item {
     margin-bottom: 40px;
   }
-  .green {
-    width: 700px;
-  }
 }
 
-@media only screen and (max-width: 850px) {
-  .green {
-    width: 450px;
+@media only screen and (max-width: 925px) {
+  .category-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-}
-
-@media only screen and (max-width: 520px) {
-  .green {
-    width: 330px;
+  .category-menu__item {
+    margin-bottom: 40px;
   }
 }
 
@@ -1517,7 +1567,7 @@ img {
 }
 
 .product {
-  margin-bottom: 140px;
+  margin-bottom: 0;
 }
 
 .product-top {
