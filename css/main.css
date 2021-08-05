@@ -2243,13 +2243,13 @@ img {
   border: 2px solid #46760A;
 }
 
-.filter-form__item-span {
-  font-family: "Poppins", sans-serif;
+.filter-form__item-nbm {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   color: #151515;
   padding: 0 5px;
+  background-color: transparent;
   border: 1px solid #D1D1D1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2265,8 +2265,8 @@ img {
           align-items: center;
 }
 
-.filter-form__span-select {
-  margin-right: 24px;
+.filter-form__item-margin {
+  margin-right: 32px;
 }
 
 .filter-form__select-line {
@@ -2281,7 +2281,7 @@ img {
 .filter-form__select-line::before {
   content: '';
   display: block;
-  width: 2px;
+  width: 1px;
   height: 24px;
   background-color: #d1d1d1;
   margin-right: 24px;
@@ -2290,11 +2290,10 @@ img {
 .filter-form__select {
   border: none;
   background-color: transparent;
-  font-family: "Poppins", sans-serif;
+  color: #151515;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  color: #151515;
 }
 
 .applied-filter {
@@ -2307,7 +2306,6 @@ img {
 }
 
 .applied-filter__heading {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
@@ -2316,7 +2314,6 @@ img {
 }
 
 .applied-filter__btn {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
