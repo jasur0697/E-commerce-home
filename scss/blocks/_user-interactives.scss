@@ -26,9 +26,21 @@
 }
 
 .svg-icons {
+    width: 24px;
+    height: 24px;
     fill: white;
 }
 
+@media only screen and (max-width: 350px) {
+    .interactives__link:not(:last-child) {
+        margin-right:20px ;
+    }
+    .svg-icons {
+        width: 20px;
+        height: 20px;
+    
+    }
+}
 .interactives__count-basket {
     position: absolute;
     z-index: 12;
@@ -45,7 +57,3 @@
     color: $white-cl;
 }
 
-.svg-icons {
-    width: 24px;
-    height: 24px;
-}

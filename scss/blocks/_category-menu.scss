@@ -22,7 +22,7 @@
   .category-menu {
     padding-top: 20px;
   }
-  
+
   .category-menu__item {
     max-width: 320px;
     
@@ -46,7 +46,6 @@
   padding: 48px 182px 28px 32px;
   background-image: url("/img/Banner.png");
   border-radius: 12px;
-
 }
 
 @media only screen and (max-width: 1100px) {
@@ -59,7 +58,7 @@
 }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
   .green {
     width: 100%;
     max-width: 850px;
@@ -175,7 +174,7 @@
 
 }
 
-@include breakpoint-down (925px) {
+@include breakpoint-down (850px) {
   .category-menu__list {
     flex-direction: column;
     justify-content: flex-start;
