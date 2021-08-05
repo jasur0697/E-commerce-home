@@ -32,6 +32,10 @@
 }
 
 @media only screen and (max-width: 350px) {
+    .middle__user-interactives {
+        margin-left: 0;
+    }
+
     .interactives__link:not(:last-child) {
         margin-right:20px ;
     }
