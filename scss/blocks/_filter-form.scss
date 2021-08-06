@@ -135,7 +135,7 @@
   margin-right: 20px;
 }
 
-.applied-filter__btn {
+.applied-filter__wrapper {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
@@ -149,8 +149,8 @@
   border: none;
   cursor: pointer;
 
-  &::after {
-    content: '';
+}
+.applied-filter__btn {
     background-image: url(../img/close-img.svg);
     background-repeat: no-repeat;
     background-position: center;
