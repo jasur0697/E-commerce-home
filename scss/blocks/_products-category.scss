@@ -1,0 +1,46 @@
+.products__categories {
+    margin-top:64px;
+}
+
+.products-filter__container {
+    font-family: $secondary-font;
+    width: 268px;
+    flex-shrink: 0;
+    margin-right: 32px;
+}
+
+.filter__categories {
+    margin-bottom: 48px;
+}
+
+.categories__heading {
+    color: $main-color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 18px
+}
+
+
+.filter-categories__list {
+    @include list-unstyled;
+    margin-top:16px;
+}
+
+.filter-categories__list a {
+    text-decoration: none;
+    color: $main-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 10px;
+}
+.filter-categories__item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.filter-categories__item:not(:last-child) {
+    margin-bottom: 12px;
+}

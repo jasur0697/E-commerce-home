@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
+    flex-wrap: wrap;
 }
 
 .page-view__heading {
@@ -27,7 +28,8 @@
 
 .page-view__list {
     margin-left: 20px;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     }
 
 .page-view__item {
@@ -36,8 +38,6 @@
     margin-right: 25px;
    }
 }
-
-
 
 .page-view__btn {
     color: $grey-cl;
@@ -62,6 +62,8 @@
     width: 32px;
     height: 18px;
     border-radius: 12px;
+    padding: 2px 8px;
+    text-align: center;
 }
 
 .grid-view {
