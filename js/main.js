@@ -1,3 +1,3 @@
 filter-btn__close
 
-var closer = document.querySelector("filter")
+var closer = document.querySelector("filter")   

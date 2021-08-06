@@ -14,12 +14,30 @@
 .page-view__list {
     @include list-unstyled;
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     font-family: $secondary-font;
 }
 
 .page-view__item:not(:last-child) {
     margin-right: 25px;
    }
+
+@media only screen and (max-width: 650px) {
+
+.page-view__list {
+    margin-left: 20px;
+    justify-content: flex-end;
+    }
+
+.page-view__item {
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-right: 25px;
+   }
+}
+
+
 
 .page-view__btn {
     color: $grey-cl;

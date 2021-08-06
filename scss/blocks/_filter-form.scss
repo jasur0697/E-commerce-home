@@ -1,17 +1,19 @@
 .filter-form__inner {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 }
 
 .filter-form__content {
+  justify-content: center;
   background: #F9F9F9;
-  align-items: center;
   display: inline-flex;
   border: 1px solid #D1D1D1;
   border-radius: 12px;
-  padding: 9px 12px;
+  padding: 9px 18px;
   margin-right: 16px;
+  margin-top: 10px;
 }
 
 .filter-form__item {
