@@ -4,9 +4,7 @@
 }
 
 .category-menu__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @include list-unstyled
   display: flex;
   justify-content: space-between;
 }

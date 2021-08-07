@@ -1,0 +1,11 @@
+.categories__heading {
+    margin-top: 50px;
+}
+
+.product-rating__list {
+    @include list-unstyled;
+}
+
+.product-rating__item {
+    margin-bottom: 12px;
+}

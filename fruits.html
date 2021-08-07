@@ -46,7 +46,7 @@
 
       <a class="middle__logo-link" href="./index.html"><img src="./img/Freshnesecom.svg"  alt="freshnese logo"  width="177" height="18"></a>
 
-      <form class="middle__search-form" action="https://echo.htmlacademy.ru" method="POST">
+      <form "id="myForm"" class="middle__search-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="search-form__select-wrapper">
           <select class="search-form__select" name="categories" aria-label="select cart">
             <option selected="selected" value="All categories" disabled>All categories</option>
@@ -243,27 +243,30 @@
   </section>
 
 
-  <section class="page-view">
-    <h2 class="page-view__heading">Fruit and vegetables</h2>
 
-    <ul class="page-view__list">
-      <li class="page-view__item">
-        <button class="page-view__btn view-icons grid-view">Grid view</button>
-      </li>
-      <li class="page-view__item ">
-        <button class="page-view__btn view-icons list-view">List view</button>
-      </li>
-      <li class="page-view__item">
-        <span class="product-counter">117</span>
-        <button class="page-view__btn">Products</button>
-      </li>
-    </ul>
-    
-  </section>
 
- 
+  <main >
 
-  <form action="https://echo.htmlacademy.ru" method="POST" class="filter-form">
+  <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form" id="myForm></form>
+
+    <section class="page-view">
+      <h2 class="page-view__heading">Fruit and vegetables</h2>
+  
+      <ul class="page-view__list">
+        <li class="page-view__item">
+          <button class="page-view__btn view-icons grid-view">Grid view</button>
+        </li>
+        <li class="page-view__item ">
+          <button class="page-view__btn view-icons list-view">List view</button>
+        </li>
+        <li class="page-view__item">
+          <span class="product-counter">117</span>
+          <button class="page-view__btn">Products</button>
+        </li>
+      </ul>
+    </section>
+
+
     <div class="filter-form__inner">
       <div class="filter-form__content">
         <label for="filter-text">
@@ -334,10 +337,8 @@
         Selected Filtre
       </button>
     </div>
-  </form>
-
-    <main >
-      <section class="products__categories">
+  
+    <section class="products__categories">
           <div class="products-filter__container">
             <div class="products__filter">
               <div class="filter__categories">
@@ -405,24 +406,84 @@
           <div class="product-rating__container">
             <div class="product__rating">
               <h3 class="categories__heading">Rating</h3>
+                <ul class="product-rating__list">
+                  <li class="product-rating__item">
+                    <label class="brands__label">
+                      <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
+                      <span class="filter-form__item-checkbox filter-form__space">
+                      <img src="./img/5star.png" alt="five star rating">
+                      </span>
+                    </label>
+                  </li>
+            
+                  <li class="product-rating__item">
+                    <label class="brands__label">
+                      <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
+                      <span class="filter-form__item-checkbox filter-form__space">
+                      <img src="./img/4star.png" alt="five star rating">
+                      </span>
+                    </label>
+                  </li>
+                  
+                  <li class="product-rating__item">
+                    <label class="brands__label">
+                      <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
+                      <span class="filter-form__item-checkbox filter-form__space">
+                      <img src="./img/3star.png" alt="five star rating">
+                      </span>
+                    </label>
+                  </li>
 
-              <label class="brands__label">
-                <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
-                <span class="filter-form__item-checkbox filter-form__space">
-                
-                </span>
-              </label>
+                  <li class="product-rating__item">
+                    <label class="brands__label">
+                      <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
+                      <span class="filter-form__item-checkbox filter-form__space">
+                      <img src="./img/2star.png" alt="five star rating">
+                      </span>
+                    </label>
+                  </li>
 
+                  <li class="product-rating__item">
+                    <label class="brands__label">
+                      <input class="filter-form__content-input visually-hidden  categories-space" type="checkbox" name="checkbox-1">
+                      <span class="filter-form__item-checkbox filter-form__space">
+                      <img src="./img/1star.png" alt="five star rating">
+                      </span>
+                    </label>
+                  </li>
+                </ul>
               
             </div>
           </div>
 
+          <div class="product-price__container">
+            <div class="product__price">
+              <h3 class="categories__heading">Price</h3>
 
-      </section>
-    </main>
-   
+              <div class="filter__range">
+                <div class="filter-range__green">
+                    <button type="button" class="range__btn range-btn__left"  aria-label="range-button"></button>
+                    <button type="button"  class="range__btn range-btn__right"  aria-label="range-button"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="min-max__container">
+              <label for="">Min<input type="number"></label>
+              <label for="">Max<input type="number"></label>
+            </div>
+          </div>
+
+          <div class="apply__form">
+            <label for="submit"></label>
+            <input type="submit" name="submit" id="submit" value="submit">
+            <label for="reset">Enter your email:</label>
+            <input onclick="myFunction()" type="reset" name="reset" id="reset" value="reset">
+          </div>
+    </section>
+  </form>
+</main>
   
-
     <footer class="site-footer">
         <div class="site-footer__top">
           <!-- <div class="site-footer__top-box"> -->
@@ -655,6 +716,8 @@
 
     </footer>
   </div>
-</body>
 
+  <script src="./js/main.js">
+  </script>
+</body>
 </html>
