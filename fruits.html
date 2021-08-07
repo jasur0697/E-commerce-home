@@ -247,7 +247,7 @@
 
   <main >
 
-  <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form" id="myForm></form>
+  <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form">
 
     <section class="page-view">
       <h2 class="page-view__heading">Fruit and vegetables</h2>
@@ -469,16 +469,20 @@
             </div>
 
             <div class="min-max__container">
-              <label for="">Min<input type="number"></label>
-              <label for="">Max<input type="number"></label>
+              <label class="min-max__label min-label" for="min">Min
+                <input class="min-max__input minimum" name="min" min="1" max="10000" type="number id="min"  placeholder="0">
+              </label>
+
+              <label class="min-max__label" for="max">Max
+                <input class="min-max__input maximum"  name="max" type="number" id="max"  min="1"  max="10000" placeholder="000">
+              </label>
             </div>
+
           </div>
 
           <div class="apply__form">
-            <label for="submit"></label>
-            <input type="submit" name="submit" id="submit" value="submit">
-            <label for="reset">Enter your email:</label>
-            <input onclick="myFunction()" type="reset" name="reset" id="reset" value="reset">
+            <input class="apply-form__input form__submit" type="submit" name="submit"   id="submit" value="Apply">
+            <input class="apply-form__input  form__reset" type="reset" name="reset" id="reset" value="Reset">
           </div>
     </section>
   </form>

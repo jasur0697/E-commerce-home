@@ -40,3 +40,75 @@
 .range-btn__right {
     right: -1px;
 }
+
+.min-max__container {
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.min-max__label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.min-label {
+    margin-right: 33px;
+}
+
+.min-label::after {
+    position: absolute;
+    z-index:1;
+    right: -20px;
+    top: calc(50%);
+    content: "-";
+    display: block;
+    width: 5px;
+    height: 19px;
+}
+
+.min-max__input {
+    font-family: $secondary-font;
+    padding: 11px 16px 12px 21px;
+    width: 100%;
+    max-width:109px;
+    background-color:#F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+
+.apply-form__input {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.form__submit {
+    color: $white-cl;
+    background-color: #6A983C;
+    padding: 12.5px 16px;
+    border-radius: 12px;
+    border: 2px solid #46760A;
+    margin-right: 46px;
+    transition: ease 0.5s ;
+}
+
+.form__submit:hover {
+    opacity: 0.7;
+}
+
+.form__reset {
+    color: $grey-cl;
+    background-color: transparent;
+    border: none;
+    transition: ease 0.2s ;
+}
+.form__reset:active {
+    opacity: 0.7;
+}
+

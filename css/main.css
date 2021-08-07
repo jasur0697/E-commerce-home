@@ -1741,6 +1741,7 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 36px;
+  margin-top: 142px;
 }
 
 .blog-top__title {
@@ -1791,7 +1792,7 @@ input[type=number] {
   margin-right: 32px;
 }
 
-.blog-main__left-link, .blog-main__info-link {
+.blog-main__left-tips {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -1803,7 +1804,7 @@ input[type=number] {
   padding: 2px 8px;
 }
 
-.blog-main__left-heading {
+.blog-main__left-link, .blog-main__info-link {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 22px;
@@ -1812,6 +1813,11 @@ input[type=number] {
   width: 380px;
   margin-top: 280px;
   margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.no {
+  visibility: hidden;
 }
 
 .blog-main__left-group {
@@ -2510,5 +2516,86 @@ input[type=number] {
 
 .range-btn__right {
   right: -1px;
+}
+
+.min-max__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.min-max__label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.min-label {
+  margin-right: 33px;
+}
+
+.min-label::after {
+  position: absolute;
+  z-index: 1;
+  right: -20px;
+  top: calc(50%);
+  content: "-";
+  display: block;
+  width: 5px;
+  height: 19px;
+}
+
+.min-max__input {
+  font-family: "Open Sans", sans-serif;
+  padding: 11px 16px 12px 21px;
+  width: 100%;
+  max-width: 109px;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.apply-form__input {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.form__submit {
+  color: #fff;
+  background-color: #6A983C;
+  padding: 12.5px 16px;
+  border-radius: 12px;
+  border: 2px solid #46760A;
+  margin-right: 46px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.form__submit:hover {
+  opacity: 0.7;
+}
+
+.form__reset {
+  color: #A9A9A9;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.form__reset:active {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */
