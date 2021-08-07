@@ -2,13 +2,14 @@
     margin-top:64px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .products-filter__container {
     font-family: $secondary-font;
     width: 268px;
     flex-shrink: 0;
-    margin-right: 32px;
+
 }
 
 .filter__categories {
@@ -22,7 +23,6 @@
     line-height: 27px;
     margin-bottom: 18px;
     margin-top:50px;
-
 }
 
 
@@ -47,4 +47,12 @@
 
 .filter-categories__item:not(:last-child) {
     margin-bottom: 12px;
+}
+
+
+@media only screen and (max-width: 1201px) {
+
+    .products__categories {
+        display: none;
+    }
 }
