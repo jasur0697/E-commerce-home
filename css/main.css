@@ -2401,7 +2401,6 @@ input[type=number] {
 
 .product-categories__wrapper {
   margin-top: 64px;
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
