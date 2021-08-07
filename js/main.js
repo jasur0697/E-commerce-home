@@ -13,7 +13,7 @@
 var elListViewButton = document.querySelector('.js-list-view-button');
     var elGridViewButton = document.querySelector('.js-grid-view-button');
     var elProducts = document.querySelector('.products');
-    var elProductsList = elProducts.querySelector('.products__list');
+    var elProductsList = elProducts.querySelector('.categories-right__list');
     var elsProduct = elProductsList.querySelectorAll('.product');
 
     function switchToProductsListView () {
