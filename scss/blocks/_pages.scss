@@ -53,6 +53,10 @@
     background-position: calc(50% + 80px);
 }
 
+.pages__btn:hover {
+    opacity: 0.8;
+}
+
 .pages__btn:active {
     opacity: 0.5;
 }
