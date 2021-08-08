@@ -1,14 +1,8 @@
-// filter-btn__close
-// var elsCatigoryCheckBtn = document.querySelectorAll(".catigory__check-btn");
-// var elsCatigoryChecked = document.querySelectorAll(".catigory__checked");
 
-// elsCatigoryCheckBtn.forEach(function (list) {
-//   list.addEventListener('click', function () {
-//     list.closest("p").remove(".catigory__checked");
-//   });  
-// });
-
-
+function remove(el) {
+    var element = el;
+    element.remove();
+  }
 
 var elListViewButton = document.querySelector('.js-list-view-button');
     var elGridViewButton = document.querySelector('.js-grid-view-button');
