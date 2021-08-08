@@ -2214,6 +2214,39 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-category__btn {
+  display: none;
+  background-image: url(/img/settings.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filter__options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter-category__btn {
+    display: block;
+  }
 }
 
 .applied-filter__heading {
@@ -2256,6 +2289,12 @@ input[type=number] {
 
 .catigory__check-btn {
   display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .applied-filter__wrapper {
+    margin-top: 10px;
+  }
 }
 
 .product-categories__wrapper {
@@ -2770,6 +2809,9 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 70px;
+  margin-bottom: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pages__list {
@@ -2824,6 +2866,32 @@ input[type=number] {
   background-repeat: no-repeat;
   background-size: 8px;
   background-position: calc(50% + 80px);
+}
+
+@media only screen and (max-width: 480px) {
+  .pages__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pages__btn {
+    padding: 12px;
+    font-weight: nor;
+    font-size: 12px;
+    line-height: 16px;
+    background-image: none;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .pages__btn:hover {

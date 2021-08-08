@@ -125,6 +125,36 @@
 .applied-filter {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.filter__options {
+  display: flex;
+  align-items: center;
+}
+
+.filter-category__btn {
+  display: none;
+  background-image: url(/img/settings.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+
+@include breakpoint-down (1200px){
+  .filter__options {
+    flex-wrap: wrap;
+  }
+
+  .filter-category__btn {
+    display: block;
+  }
+
+ 
 }
 
 .applied-filter__heading {
@@ -148,7 +178,6 @@
   padding: 2px 8px 2px 8px;
   border: none;
   cursor: pointer;
-
 }
 .applied-filter__btn {
     background-image: url(../img/close-img.svg);
@@ -161,7 +190,12 @@
     margin-left: 8px;
   }
 
-
   .catigory__check-btn{
     display: none;
+  }
+
+  @include breakpoint-down (450px){
+    .applied-filter__wrapper {
+      margin-top: 10px;
+    }
   }
